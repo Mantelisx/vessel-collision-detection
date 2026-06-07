@@ -14,6 +14,9 @@ services:
       - LOG_LEVEL=INFO
       - DEBUG=false
     
+    # Run only day 13 by default
+    command: ["-d", "13"]
+    
     volumes:
       # Mount AIS data directory (user provides CSV files)
       - ./aisdk-2021-12:/app/aisdk-2021-12:ro
