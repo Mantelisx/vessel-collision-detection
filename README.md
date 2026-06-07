@@ -142,6 +142,7 @@ wrong, fishing vessels
 - **Liu et al. (2023)**: AIS error detection overall overview
 - **ITU-R M.585-9**: MMSI allocation and validation https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.585-10-202604-I!!PDF-E.pdf first pages
 - **H3**: Hierarchical geospatial indexing system
+- **COLREG**: Was also considered implementing but not correctly, therefore there might be some placeholder code in repo. For more info on COLREG rules check https://www.imo.org/en/ourwork/safety/pages/preventing-collisions.aspx
 
 ---
 
