@@ -25,7 +25,6 @@ Detects and visualizes vessel collisions using Apache Spark and Danish AIS (Auto
 ```bash
 # Clone repository
 git clone <repo-url>
-cd ais-collision-detection
 
 # Create data directory and add CSV files
 mkdir -p aisdk-2021-12
