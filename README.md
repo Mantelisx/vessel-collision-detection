@@ -55,6 +55,7 @@ docker run -v ./aisdk-2021-12:/app/aisdk-2021-12:ro \
            itsmantas/ais-collision-detection:latest
 
 # if didn't work use/run this will run pipeline in docker `docker-compose up`
+But ensure you have only day 2021-12-13 because might take a long time with full dataset!
 ```
 
 
