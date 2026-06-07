@@ -1,0 +1,13 @@
+# Core PySpark and Data Processing
+pyspark==3.5.0
+pandas==2.1.1
+numpy==1.24.3
+
+# Visualization
+folium==0.14.0
+
+# Logging and utilities
+python-dotenv==1.0.0
+
+# Optional: Type hints and validation
+typing-extensions==4.8.0

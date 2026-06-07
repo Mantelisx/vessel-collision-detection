@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  collision_detection:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ais-collision-detection
+    image: ais-collision-detection:latest
+    
+    environment:
+      - DATA_DIR=/app/aisdk-2021-12
+      - OUTPUT_DIR=/app/output
+      - LOG_LEVEL=INFO
+      - DEBUG=false
+    
+    volumes:
+      # Mount AIS data directory (user provides CSV files)
+      - ./aisdk-2021-12:/app/aisdk-2021-12:ro
+      # Mount output directory for results
+      - ./output:/app/output
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: 8G
+        reservations:
+          cpus: '2.0'
+          memory: 4G
+    
+    # Restart policy
+    restart: no
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
+    
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+
+# Network configuration (optional)
+networks:
+  default:
+    name: ais-network
+    driver: bridge
+
+# Volume definitions
+volumes:
+  data:
+    driver: local
+  output:
+    driver: local
