@@ -47,7 +47,7 @@ docker pull itsmantas/ais-collision-detection:latest
 
 # Create data directory
 mkdir -p aisdk-2021-12
-# Add CSV files to aisdk-2021-12/
+# Add CSV files to aisdk-2021-12/    FOR TESTING PURPOSES ENSURE IT IS 2021-12-13 as it is designed now to test that by default if you want to replicate results
 
 # Run
 docker run -v ./aisdk-2021-12:/app/aisdk-2021-12:ro \
