@@ -10,6 +10,7 @@ Detects and visualizes vessel collisions using Apache Spark and Danish AIS (Auto
 - Excludes port zones and undefined/pilot ships
 - Generates interactive collision maps with vessel trajectories
 - Outputs collision data: MMSI, vessel names, timestamps, coordinates, distance (meters)
+- Chech output in output folder
 
 ## Prerequisites
 
